@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Grid Layout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="my.css" rel="stylesheet" type="text/css">
+        <style>
+            .row > div {border:1px solid #999; background-color:#f0f0f0; padding:8px; }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="bs_buttons.html">Bootstrap buttons</a></p>
+            <p><a href="bs_component.html">Bootstrap component</a></p>
+            <p class="active"><a href="bs_layout.html">Bootstrap  layout</a></p>
+        </nav>
+        <div id='content'>
+            <h1>Bootstrap Grid Layout </h1>
+            <section>
+                Blow you can see how bootstap grid layout works. 
+                It will automatically change if the screen size is small
+            </section>
+            <div class="row">
+                <div class="col-md-9">I am setup as 'col-9' for medium screen size</div>
+                <div class="col-md-3">I am setup as 'col-3' for medium screen size.
+                    Note that this layout is not as good as flexbox: when columns gets taller, 
+                    it doesn't affect the other columns in the row.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">I am 'col-2'</div>
+                <div class="col-md-10">I am 'col-10'</div>
+            </div>
+        </div>
+    </body>
+</html>

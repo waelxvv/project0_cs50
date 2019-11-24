@@ -1,0 +1,74 @@
+li + li:after, .note {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  font-size: 76%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  background-color: #444;
+}
+
+nav > p {
+  padding: 14px 30px;
+  margin: 0;
+}
+
+nav > p:hover {
+  background-color: #333;
+}
+
+p:hover a {
+  color: lightyellow;
+}
+
+nav .active {
+  background: black;
+  border-bottom: 4px solid #2cf136;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+#content {
+  padding: 10px 60px;
+}
+
+h1, #content > p {
+  color: #008;
+}
+
+li + li:after {
+  color: #333;
+  content: " (Register at cs50.edx.org/web)";
+}
+
+section {
+  border: 1px solid #2cf136;
+  border-radius: 5px;
+  margin: 15px 0 20px 0;
+  padding: 5px 20px;
+  background: #f1f5f0;
+}
+
+li:hover img[width="72"] {
+  box-shadow: 1px 1px 6px #333;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+  }
+
+  #content {
+    padding: 10px 20px;
+    background-color: #F7FFF9;
+  }
+}
